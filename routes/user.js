@@ -1,5 +1,5 @@
 const {Router} = require("express");
-const User = require("../models/user")
+const User = require("../models/user");
 
 const router = Router();
 
@@ -34,5 +34,8 @@ router.post("/signin", async (req, res) => {
     }
 });
 
+router.get("/logout", (req, res) => {
+    res.clearCookie("token").redirect("/");
+})
 
 module.exports = router;
