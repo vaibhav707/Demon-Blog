@@ -7,16 +7,20 @@
 <body>
     <%- include("./partials/nav") %>
     
-    <div class="container mt-3">
+    <div class="container mt-3"> 
+        <div class = "row row-cols-5" >
         <% blogs.forEach(blog => { %>
-            <div class="card" style="width: 18rem;">
-                <img src="<%= blog.coverImageURL %>" class="card-img-top">
-                <div class="card-body">
-                  <h5 class="card-title"><%= blog.title %></h5>
-                  <a href="/blog/<%= blog._id %>" class="btn btn-primary">View</a>
+            <div class="col">
+                <div class="card col" style="width: 15rem; background-color:rgb(208, 205, 201); padding: 5px;">
+                    <img src="<%= blog.coverImageURL %>" class="card-img-top" style="width: 225px; height: 225px;">
+                    <div class="card-body">
+                    <h5 class="card-title"><%= blog.title %></h5>
+                    <a href="/blog/<%= blog._id %>" class="btn btn-primary">View</a>
+                    </div>
                 </div>
-              </div>
+            </div>
         <% }) %>
+        </div>
     </div>
 
     <%- include("./partials/scripts") %>
