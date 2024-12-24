@@ -4,18 +4,18 @@
     <%- include("./partials/head") %>
     <title>Homepage</title>
 </head>
-<body>
+<body class="bg-secondary" style="color:rgb(0, 0, 0);">
     <%- include("./partials/nav") %>
     
     <div class="container mt-3"> 
         <div class = "row row-cols-5" >
         <% blogs.forEach(blog => { %>
             <div class="col">
-                <div class="card col" style="width: 15rem; background-color:rgb(208, 205, 201); padding: 5px;">
+                <div class="card col" style="width: 15rem; background-color:rgb(171, 175, 173); padding: 5px;">
                     <img src="<%= blog.coverImageURL %>" class="card-img-top" style="width: 225px; height: 225px;">
                     <div class="card-body">
                     <h5 class="card-title"><%= blog.title %></h5>
-                    <a href="/blog/<%= blog._id %>" class="btn btn-primary">View</a>
+                    <a href="/blog/<%= blog._id %>" class="btn btn-danger">View</a>
                     </div>
                 </div>
             </div>

@@ -4,7 +4,7 @@
     <%- include("./partials/head") %>
     <title>Add New Blog</title>
 </head>
-<body>
+<body class="bg-secondary" style="color:rgb(0, 0, 0);"></body>
     <%- include("./partials/nav") %>
     
     <div class="container mt-3">
@@ -16,12 +16,12 @@
 
             <div class="mb-3">
               <label for="title" class="form-label">Title</label>
-              <input type="text" class="form-control" id="title" name="title" aria-describedby="title"/>
+              <input type="text" class="form-control" id="title" name="title" aria-describedby="title" placeholder="Enter the title"/>
             </div>
 
             <div class="mb-3">
               <label for="body">Body</label>
-                <textarea name="body" class="form-control" id="body"></textarea>
+                <textarea name="body" style="height: 400px;" class="form-control" id="body" placeholder="Spit Fire..."></textarea>
             </div>
 
             <div class="mb-3">
