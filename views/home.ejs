@@ -4,14 +4,14 @@
     <%- include("./partials/head") %>
     <title>Homepage</title>
 </head>
-<body class="bg-secondary" style="color:rgb(0, 0, 0);">
+<body class="bg-secondary" style="color:rgb(249, 43, 43);">
     <%- include("./partials/nav") %>
     
     <div class="container mt-3"> 
         <div class = "row row-cols-5" >
         <% blogs.forEach(blog => { %>
             <div class="col">
-                <div class="card col" style="width: 15rem; background-color:rgb(171, 175, 173); padding: 5px;">
+                <div class="card col" style="width: 15rem; background-color: rgb(232, 140, 140); padding: 5px;">
                     <img src="<%= blog.coverImageURL %>" class="card-img-top" style="width: 225px; height: 225px;">
                     <div class="card-body">
                     <h5 class="card-title"><%= blog.title %></h5>

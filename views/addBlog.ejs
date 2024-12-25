@@ -4,24 +4,24 @@
     <%- include("./partials/head") %>
     <title>Add New Blog</title>
 </head>
-<body class="bg-secondary" style="color:rgb(0, 0, 0);"></body>
+<body class="bg-secondary" style="color:rgb(249, 43, 43);"></body>
     <%- include("./partials/nav") %>
     
     <div class="container mt-3">
         <form action="/blog" method="post" enctype="multipart/form-data">
             <div class="mb-3">
                 <label for="coverImage" class="form-label">Cover Image</label>
-                <input type="file" class="form-control" id="coverImage" name="coverImage" aria-describedby="coverImage"/>
+                <input type="file" class="form-control" id="coverImage" name="coverImage" aria-describedby="coverImage" style="background-color: rgb(232, 140, 140);"/>
             </div>
 
             <div class="mb-3">
               <label for="title" class="form-label">Title</label>
-              <input type="text" class="form-control" id="title" name="title" aria-describedby="title" placeholder="Enter the title"/>
+              <input type="text" class="form-control" id="title" name="title" aria-describedby="title" placeholder="Title for your FIRE!!" style="background-color: rgb(232, 140, 140);"/>
             </div>
 
             <div class="mb-3">
               <label for="body">Body</label>
-                <textarea name="body" style="height: 400px;" class="form-control" id="body" placeholder="Spit Fire..."></textarea>
+                <textarea name="body" style="height: 400px; background-color: rgb(232, 140, 140);" class="form-control" id="body" placeholder="Spit you FIRE..."></textarea>
             </div>
 
             <div class="mb-3">
