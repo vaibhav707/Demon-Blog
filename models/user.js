@@ -43,6 +43,7 @@ userSchema.pre("save", function (next) {
     next();
 });
 
+
 userSchema.static("matchPassword", async function (email, password) {
     const user = await this.findOne({email});
     if(!user){
